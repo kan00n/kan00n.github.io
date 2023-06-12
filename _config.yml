@@ -34,12 +34,12 @@ url: ""
 # twitter:
 #   username: twitter_username # change to your twitter username
 
-# social:
+social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-#   name: your_full_name
-#   email: example@domain.com # change to your email address
-#   links:
+  name: your_full_name
+  email: example@domain.com # change to your email address
+  links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username # change to your twitter homepage
     - https://github.com/username # change to your github homepage
@@ -47,12 +47,12 @@ url: ""
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-# google_site_verification: # fill in to your verification string
+google_site_verification: # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
-# google_analytics:
+google_analytics:
 #   id: # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
 #   pv:
