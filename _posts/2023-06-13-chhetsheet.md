@@ -14,7 +14,6 @@ mermaid: truet7we
 ##　注意事項
 
 - 変数名は`<val>`って書いてます
-- 
 
 ## java servlet
 
