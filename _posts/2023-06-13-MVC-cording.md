@@ -7,6 +7,7 @@ tags: [java]
 math: true
 mermaid: truet7we
 
+
 ---
 
 # MVC cording解説
@@ -110,7 +111,7 @@ public class Goods implements Serializable {
 
 ## Goods DAO
 
-はいでました、問題児、ちょっとコードが長すぎるので全文は[Appendix1](#Appendix)に貼っておきます。
+はいでました、問題児、ちょっとコードが長すぎるので全文はAppendixに貼っておきます。
 
 ### ArrayList・List
 
@@ -297,8 +298,8 @@ List → [要素A | 要素B | 要素C | 要素D]
 
 定義さえも抜いてしまえば5行ですねおーまいがー。。。
 
-- `conn = getConnection();`は[さっき](#SQL文)説明したDBへの接続準備を勝手にしてくれるもの
-- `pstmt = conn.prepareStatement(SQL_SELECTALL_GOODS);`これも[さっき](#SQL文)説明した基礎SQL文の構築
+- `conn = getConnection();`はさっき説明したDBへの接続準備を勝手にしてくれるもの
+- `pstmt = conn.prepareStatement(SQL_SELECTALL_GOODS);`これもさっき説明した基礎SQL文の構築
 - `rs = pstmt.executeQuery();`はSQLクエリの発行でこれをすることでSQLにJavaが「このクエリ実行してくんね？」って行ってくれます。あー便利
 - `readResultSet(rs);`クエリで帰ってきたものをパースするメゾットです、後で説明します。
 
@@ -338,10 +339,10 @@ DBへの接続準備→基礎SQL文の構築→SQLクエリの発行→クエリ
 
 更に`rs.next()`ってすると今度は**2→**の部分に行きます。同様に`getInt`や`getString`をすることでその行にある値をとってこれます。
 
-|      | id   | name | price |
-| :--: | :--: | :--: | :---: |
-| 1→re[0] | id0 | name0 | price0 |
-| 2→re[1] | id1 | name1 | price1 |
+|         |  id  | name  | price  |
+| :-----: | :--: | :---: | :----: |
+| 1→re[0] | id0  | name0 | price0 |
+| 2→re[1] | id1  | name1 | price1 |
 
 ってな感じでしているので`rs`の中身は**配列**って考えてもいいかもですね。
 
@@ -484,7 +485,6 @@ public class GoodsSelectServlet extends HttpServlet {
 更に分解して、
 
 ```java
-
 		// 入力パラメータをデコードする文字コード指定
 		request.setCharacterEncoding("UTF-8");
 
