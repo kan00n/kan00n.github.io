@@ -1,5 +1,5 @@
 ---
-title: MVC cording
+title: Cheet sheet
 author: kan00n
 date: 2023-06-12 00:00:00 +0900
 categories: [java]
@@ -543,4 +543,3 @@ public int insert(Goods goods) {
 		}
 	}
 ```
-
